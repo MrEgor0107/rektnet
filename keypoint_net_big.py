@@ -2,8 +2,8 @@ from torch._C import device
 import torch.nn as nn
 import torch
 import torch.nn.functional
-from rektnet.resnet_big import ResNetBig
-from rektnet.cross_ratio_loss_big import CrossRatioLossBig
+from resnet_big import ResNetBig
+from cross_ratio_loss_big import CrossRatioLossBig
 
 def print_tensor_stats(x, name):
     flattened_x = x.cpu().detach().numpy().flatten()
